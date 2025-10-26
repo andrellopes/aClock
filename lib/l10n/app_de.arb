@@ -1,0 +1,188 @@
+{
+  "@@locale": "de",
+  "appTitle": "ExacTime",
+  "settingsTitle": "Einstellungen",
+  "appearance": "Erscheinungsbild",
+  "language": "Sprache",
+  "systemDefault": "Systemstandard",
+  "english": "Englisch",
+  "portuguese": "Portugiesisch",
+  "spanish": "Spanisch",
+  "german": "Deutsch",
+  "french": "Französisch",
+  "italian": "Italienisch",
+  "theme": "Thema",
+  "light": "Hell",
+  "dark": "Dunkel",
+  "help": "Hilfe",
+  "commandsAndGestures": "Befehle und Gesten",
+  "clockTheme": "Uhren-Thema",
+  "clockThemeDigital": "Digital",
+  "clockThemeFlip": "Flip",
+  "adjustments": "Anpassungen",
+  "fontSize": "Schriftgröße",
+  "selectFontSize": "Schriftgröße auswählen",
+  "enableSlidingMovement": "Gleitbewegung aktivieren",
+  "showSecondsInPortrait": "Sekunden im Hochformat anzeigen",
+  "showDate": "Datum anzeigen",
+  "saveAndClose": "Speichern und schließen",
+  "settingsSaved": "Einstellungen erfolgreich gespeichert",
+  "ok": "OK",
+  "developedBy": "Entwickelt von allc 🤖",
+  "aboutTitle": "Über",
+  "aboutContactLinks": "Kontakt und Links:",
+  "aboutSupportMessage": "Wenn diese App Ihnen nützlich war,\nbetrachten Sie die Unterstützung der Entwicklung mit einem Kaffee ☕!",
+  "close": "Schließen",
+  "aboutPixCopied": "PIX-Schlüssel kopiert!",
+  "aboutSupportWithPix": "Mit PIX unterstützen",
+  "commandsDialogTitle": "Befehle und Gesten",
+  "doubleTapCommand": "Doppel-Tap auf dem Bildschirm",
+  "doubleTapDescription": "Der Roboter spricht die aktuelle Zeit laut aus.",
+  "singleTapCommand": "Einzel-Tap auf dem Bildschirm",
+  "singleTapDescription": "Zeigt oder versteckt die Einstellungs-Schaltfläche und den Entwickler-Link.",
+  "iUnderstand": "Verstanden",
+  "settingsTooltip": "Einstellungen",
+  "timeInHours": "{count,select, 0{zwölf} 1{eins} 2{zwei} 3{drei} 4{vier} 5{fünf} 6{sechs} 7{sieben} 8{acht} 9{neun} 10{zehn} 11{elf} 12{zwölf} 13{eins} 14{zwei} 15{drei} 16{vier} 17{fünf} 18{sechs} 19{sieben} 20{acht} 21{neun} 22{zehn} 23{elf} other{}}",
+  "@timeInHours": {
+    "description": "Konvertiert die Stundenzahl in ein Wort für TTS. Behandelt das 24-Stunden-Format, konvertiert zu 12-Stunden für Sprache.",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "timeInMinutes": "{count,select, 0{} 1{eins} 2{zwei} 3{drei} 4{vier} 5{fünf} 6{sechs} 7{sieben} 8{acht} 9{neun} 10{zehn} 11{elf} 12{zwölf} 13{dreizehn} 14{vierzehn} 15{fünfzehn} 16{sechzehn} 17{siebzehn} 18{achtzehn} 19{neunzehn} 20{zwanzig} 21{einundzwanzig} 22{zweiundzwanzig} 23{dreiundzwanzig} 24{vierundzwanzig} 25{fünfundzwanzig} 26{sechsundzwanzig} 27{siebenundzwanzig} 28{achtundzwanzig} 29{neunundzwanzig} 30{dreißig} 31{einunddreißig} 32{zweiunddreißig} 33{dreiunddreißig} 34{vierunddreißig} 35{fünfunddreißig} 36{sechsunddreißig} 37{siebenunddreißig} 38{achtunddreißig} 39{neununddreißig} 40{vierzig} 41{einundvierzig} 42{zweiundvierzig} 43{dreiundvierzig} 44{vierundvierzig} 45{fünfundvierzig} 46{sechsundvierzig} 47{siebenundvierzig} 48{achtundvierzig} 49{neunundvierzig} 50{fünfzig} 51{einundfünfzig} 52{zweiundfünfzig} 53{dreiundfünfzig} 54{vierundfünfzig} 55{fünfundfünfzig} 56{sechsundfünfzig} 57{siebenundfünfzig} 58{achtundfünfzig} 59{neunundfünfzig} other{}}",
+  "@timeInMinutes": {
+    "description": "Konvertiert die Minutenzahl in ein Wort für TTS.",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "timeIsExactly": "Es ist {time} Uhr.",
+  "@timeIsExactly": {
+    "description": "Satz, um die genaue Zeit zu sagen.",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "timeIs": "Es ist {hours} {minutes}.",
+  "@timeIs": {
+    "description": "Satz, um die Zeit mit Stunden und Minuten zu sagen.",
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "minutes": {
+        "type": "String"
+      }
+    }
+  },
+  "speakTimeOnChange": "Zeit automatisch ansagen",
+  "clockThemeText": "Text",
+  "@clockThemeText": {
+    "description": "Der Name für das textbasierte Uhren-Thema"
+  },
+  "timeInSeconds": "{count,select, 0{} 1{eins} 2{zwei} 3{drei} 4{vier} 5{fünf} 6{sechs} 7{sieben} 8{acht} 9{neun} 10{zehn} 11{elf} 12{zwölf} 13{dreizehn} 14{vierzehn} 15{fünfzehn} 16{sechzehn} 17{siebzehn} 18{achtzehn} 19{neunzehn} 20{zwanzig} 21{einundzwanzig} 22{zweiundzwanzig} 23{dreiundzwanzig} 24{vierundzwanzig} 25{fünfundzwanzig} 26{sechsundzwanzig} 27{siebenundzwanzig} 28{achtundzwanzig} 29{neunundzwanzig} 30{dreißig} 31{einunddreißig} 32{zweiunddreißig} 33{dreiunddreißig} 34{vierunddreißig} 35{fünfunddreißig} 36{sechsunddreißig} 37{siebenunddreißig} 38{achtunddreißig} 39{neununddreißig} 40{vierzig} 41{einundvierzig} 42{zweiundvierzig} 43{dreiundvierzig} 44{vierundvierzig} 45{fünfundvierzig} 46{sechsundvierzig} 47{siebenundvierzig} 48{achtundvierzig} 49{neunundvierzig} 50{fünfzig} 51{einundfünfzig} 52{zweiundfünfzig} 53{dreiundfünfzig} 54{vierundfünfzig} 55{fünfundfünfzig} 56{sechsundfünfzig} 57{siebenundfünfzig} 58{achtundfünfzig} 59{neunundfünfzig} other{}}",
+  "@timeInSeconds": {
+    "description": "Konvertiert die Sekundenzahl in ein Wort.",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "timeIsAll": "Es ist {hours} Stunde(n), {minutes} Minute(n) und {seconds} Sekunde(n).",
+  "@timeIsAll": {
+    "description": "Satz, um die Zeit mit Stunden, Minuten und Sekunden anzuzeigen.",
+    "placeholders": {
+      "hours": { "type": "String" },
+      "minutes": { "type": "String" },
+      "seconds": { "type": "String" }
+    }
+  },
+  "timeIsHourAndSeconds": "Es ist {hours} Stunde(n) und {seconds} Sekunde(n).",
+  "@timeIsHourAndSeconds": {
+    "description": "Satz, um die Zeit mit Stunden und Sekunden anzuzeigen (wenn Minute null ist).",
+    "placeholders": {
+      "hours": { "type": "String" },
+      "seconds": { "type": "String" }
+    }
+  },
+  "clockThemeAnalog": "Analog",
+  "clockThemeAnalogRoman": "Analog (Römisch)",
+  "showClockFrame": "Uhrenrahmen anzeigen",
+  "use24HourFormat": "24-Stunden-Format verwenden",
+  "alarms": "Wecker",
+  "addAlarm": "Wecker hinzufügen",
+  "alarmMessageHint": "Geben Sie eine Nachricht ein, die gesprochen werden soll",
+  "save": "Speichern",
+  "cancel": "Abbrechen",
+  "delete": "Löschen",
+  "noAlarms": "Keine Wecker eingestellt.",
+  "settingsAlarms": "Wecker verwalten",
+  "tapToDismiss": "Tippen zum Entlassen",
+  "alarm": "Wecker",
+  "alarmDeleted": "Wecker \"{alarmName}\" gelöscht.",
+  "@alarmDeleted": {
+    "description": "Bestätigungsnachricht, wenn ein Wecker gelöscht wird.",
+    "placeholders": {
+      "alarmName": {
+        "type": "String",
+        "example": "Aufwachen"
+      }
+    }
+  },
+  "daySundayShort": "S",
+  "dayMondayShort": "M",
+  "dayTuesdayShort": "D",
+  "dayWednesdayShort": "M",
+  "dayThursdayShort": "D",
+  "dayFridayShort": "F",
+  "daySaturdayShort": "S",
+  "alarmNew": "Neuer Wecker",
+  "alarmEdit": "Wecker bearbeiten",
+  "alarmTime": "Zeit",
+  "alarmLabelHint": "Label (optional)",
+  "alarmRepeat": "Wiederholen",
+  "alarmSound": "Wecker-Ton",
+  "alarmSoundAsset": "Tondatei",
+  "alarmSoundTts": "Gesprochener Text",
+  "alarmTtsHint": "Text zum Sprechen",
+  "alarmStopCondition": "Stopp-Bedingung",
+  "alarmStopOnInteraction": "Beim Tippen auf den Bildschirm",
+  "alarmStopAfterReps": "Nach N Wiederholungen",
+  "alarmRepsHint": "Anzahl der Wiederholungen",
+  "soundSelection": "Ton",
+  "soundBeep": "Piep",
+  "soundRooster": "Hahn",
+  "selectAll": "Alle auswählen",
+  "deselectAll": "Alle abwählen",
+  "accentColorLabel": "Zeiger- und Hervorhebungsfarbe",
+  "themeClassicBlack": "Klassisches Schwarz",
+  "themeModernBlue": "Modernes Blau",
+  "themeMinimalWhite": "Minimalistisches Weiß",
+  "themeRetroGreen": "Retro-Grün",
+  "themeGoldLuxury": "Gold-Luxus",
+  "themeSpaceGray": "Weltraum-Grau",
+  "themeRoseGold": "Roségold",
+  "themeNightBlue": "Nachtblau",
+  "themeIvoryElegance": "Elfenbein-Eleganz",
+  "themeDigitalNeon": "Digital-Neon",
+  "themeCopperVintage": "Kupfer-Vintage",
+  "proThemeMessage": "Thema exklusiv für den PRO-Plan!",
+  "upgradeToProTitle": "Auf PRO upgraden",
+  "upgradeToProDesc": "Schalten Sie exklusive Funktionen frei und entfernen Sie Anzeigen!",
+  "noAds": "Keine Anzeigen",
+  "exclusiveThemes": "Exklusive Themen",
+  "supportDeveloper": "Entwickler unterstützen",
+  "buyFor": "Kaufen für",
+  "buyProVersion": "PRO-Version kaufen",
+  "processing": "Verarbeitung...",
+  "unavailable": "Nicht verfügbar",
+  "restorePurchases": "Käufe wiederherstellen",
+  "loading": "Laden..."
+}

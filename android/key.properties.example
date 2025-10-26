@@ -1,0 +1,8 @@
+# Example signing config for local builds (DO NOT COMMIT a real key.properties)
+# Copy to android/key.properties and replace placeholders with your values.
+# This file is ignored by .gitignore.
+
+storePassword=your-strong-password
+keyPassword=your-strong-password
+keyAlias=your-key-alias
+storeFile=app/release-key.jks

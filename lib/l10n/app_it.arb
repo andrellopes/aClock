@@ -1,0 +1,188 @@
+{
+  "@@locale": "it",
+  "appTitle": "ExacTime",
+  "settingsTitle": "Impostazioni",
+  "appearance": "Aspetto",
+  "language": "Lingua",
+  "systemDefault": "Predefinito di sistema",
+  "english": "Inglese",
+  "portuguese": "Portoghese",
+  "spanish": "Spagnolo",
+  "german": "Tedesco",
+  "french": "Francese",
+  "italian": "Italiano",
+  "theme": "Tema",
+  "light": "Chiaro",
+  "dark": "Scuro",
+  "help": "Aiuto",
+  "commandsAndGestures": "Comandi e gesti",
+  "clockTheme": "Tema orologio",
+  "clockThemeDigital": "Digitale",
+  "clockThemeFlip": "Flip",
+  "adjustments": "Regolazioni",
+  "fontSize": "Dimensione font",
+  "selectFontSize": "Seleziona dimensione font",
+  "enableSlidingMovement": "Abilita movimento scorrevole",
+  "showSecondsInPortrait": "Mostra secondi in verticale",
+  "showDate": "Mostra data",
+  "saveAndClose": "Salva e chiudi",
+  "settingsSaved": "Impostazioni salvate con successo",
+  "ok": "OK",
+  "developedBy": "Sviluppato da allc 🤖",
+  "aboutTitle": "Informazioni",
+  "aboutContactLinks": "Contatto e collegamenti:",
+  "aboutSupportMessage": "Se questa app ti è stata utile,\nconsidera di supportare lo sviluppo con un caffè ☕!",
+  "close": "Chiudi",
+  "aboutPixCopied": "Chiave PIX copiata!",
+  "aboutSupportWithPix": "Supporta con PIX",
+  "commandsDialogTitle": "Comandi e gesti",
+  "doubleTapCommand": "Doppio tocco sullo schermo",
+  "doubleTapDescription": "Il robot annuncia l'ora corrente ad alta voce.",
+  "singleTapCommand": "Tocco singolo sullo schermo",
+  "singleTapDescription": "Mostra o nasconde il pulsante impostazioni e il collegamento sviluppatore.",
+  "iUnderstand": "Capito",
+  "settingsTooltip": "Impostazioni",
+  "timeInHours": "{count,select, 0{dodici} 1{una} 2{due} 3{tre} 4{quattro} 5{cinque} 6{sei} 7{sette} 8{otto} 9{nove} 10{dieci} 11{undici} 12{dodici} 13{una} 14{due} 15{tre} 16{quattro} 17{cinque} 18{sei} 19{sette} 20{otto} 21{nove} 22{dieci} 23{undici} other{}}",
+  "@timeInHours": {
+    "description": "Converte il numero dell'ora in parola per TTS. Gestisce il formato 24h, converte a 12h per la voce.",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "timeInMinutes": "{count,select, 0{} 1{uno} 2{due} 3{tre} 4{quattro} 5{cinque} 6{sei} 7{sette} 8{otto} 9{nove} 10{dieci} 11{undici} 12{dodici} 13{tredici} 14{quattordici} 15{quindici} 16{sedici} 17{diciassette} 18{diciotto} 19{diciannove} 20{venti} 21{ventuno} 22{ventidue} 23{ventitré} 24{ventiquattro} 25{venticinque} 26{ventisei} 27{ventisette} 28{ventotto} 29{ventinove} 30{trenta} 31{trentuno} 32{trentadue} 33{trentatré} 34{trentaquattro} 35{trentacinque} 36{trentasei} 37{trentasette} 38{trentotto} 39{trentanove} 40{quaranta} 41{quarantuno} 42{quarantadue} 43{quarantatré} 44{quarantaquattro} 45{quarantacinque} 46{quarantasei} 47{quarantasette} 48{quarantotto} 49{quarantanove} 50{cinquanta} 51{cinquantuno} 52{cinquantadue} 53{cinquantatré} 54{cinquantaquattro} 55{cinquantacinque} 56{cinquantasei} 57{cinquantasette} 58{cinquantotto} 59{cinquantanove} other{}}",
+  "@timeInMinutes": {
+    "description": "Converte il numero del minuto in parola per TTS.",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "timeIsExactly": "Sono le {time} in punto.",
+  "@timeIsExactly": {
+    "description": "Frase per dire l'ora esatta.",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "timeIs": "Sono le {hours} e {minutes}.",
+  "@timeIs": {
+    "description": "Frase per dire l'ora con ore e minuti.",
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "minutes": {
+        "type": "String"
+      }
+    }
+  },
+  "speakTimeOnChange": "Annuncia l'ora automaticamente",
+  "clockThemeText": "Testo",
+  "@clockThemeText": {
+    "description": "Il nome per il tema orologio basato su testo"
+  },
+  "timeInSeconds": "{count,select, 0{} 1{uno} 2{due} 3{tre} 4{quattro} 5{cinque} 6{sei} 7{sette} 8{otto} 9{nove} 10{dieci} 11{undici} 12{dodici} 13{tredici} 14{quattordici} 15{quindici} 16{sedici} 17{diciassette} 18{diciotto} 19{diciannove} 20{venti} 21{ventuno} 22{ventidue} 23{ventitré} 24{ventiquattro} 25{venticinque} 26{ventisei} 27{ventisette} 28{ventotto} 29{ventinove} 30{trenta} 31{trentuno} 32{trentadue} 33{trentatré} 34{trentaquattro} 35{trentacinque} 36{trentasei} 37{trentasette} 38{trentotto} 39{trentanove} 40{quaranta} 41{quarantuno} 42{quarantadue} 43{quarantatré} 44{quarantaquattro} 45{quarantacinque} 46{quarantasei} 47{quarantasette} 48{quarantotto} 49{quarantanove} 50{cinquanta} 51{cinquantuno} 52{cinquantadue} 53{cinquantatré} 54{cinquantaquattro} 55{cinquantacinque} 56{cinquantasei} 57{cinquantasette} 58{cinquantotto} 59{cinquantanove} other{}}",
+  "@timeInSeconds": {
+    "description": "Converte il numero del secondo in parola.",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "timeIsAll": "Sono le {hours} ora(e), {minutes} minuto(i) e {seconds} secondo(i).",
+  "@timeIsAll": {
+    "description": "Frase per visualizzare l'ora con ore, minuti e secondi.",
+    "placeholders": {
+      "hours": { "type": "String" },
+      "minutes": { "type": "String" },
+      "seconds": { "type": "String" }
+    }
+  },
+  "timeIsHourAndSeconds": "Sono le {hours} ora(e) e {seconds} secondo(i).",
+  "@timeIsHourAndSeconds": {
+    "description": "Frase per visualizzare l'ora con ore e secondi (quando minuto è zero).",
+    "placeholders": {
+      "hours": { "type": "String" },
+      "seconds": { "type": "String" }
+    }
+  },
+  "clockThemeAnalog": "Analogico",
+  "clockThemeAnalogRoman": "Analogico (Romano)",
+  "showClockFrame": "Mostra cornice orologio",
+  "use24HourFormat": "Usa formato 24 ore",
+  "alarms": "Sveglie",
+  "addAlarm": "Aggiungi sveglia",
+  "alarmMessageHint": "Inserisci un messaggio da pronunciare",
+  "save": "Salva",
+  "cancel": "Annulla",
+  "delete": "Elimina",
+  "noAlarms": "Nessuna sveglia impostata.",
+  "settingsAlarms": "Gestisci sveglie",
+  "tapToDismiss": "Tocca per chiudere",
+  "alarm": "Sveglia",
+  "alarmDeleted": "Sveglia \"{alarmName}\" eliminata.",
+  "@alarmDeleted": {
+    "description": "Messaggio di conferma quando una sveglia viene eliminata.",
+    "placeholders": {
+      "alarmName": {
+        "type": "String",
+        "example": "Svegliarsi"
+      }
+    }
+  },
+  "daySundayShort": "D",
+  "dayMondayShort": "L",
+  "dayTuesdayShort": "M",
+  "dayWednesdayShort": "M",
+  "dayThursdayShort": "G",
+  "dayFridayShort": "V",
+  "daySaturdayShort": "S",
+  "alarmNew": "Nuova sveglia",
+  "alarmEdit": "Modifica sveglia",
+  "alarmTime": "Ora",
+  "alarmLabelHint": "Etichetta (opzionale)",
+  "alarmRepeat": "Ripeti",
+  "alarmSound": "Suono sveglia",
+  "alarmSoundAsset": "File audio",
+  "alarmSoundTts": "Testo parlato",
+  "alarmTtsHint": "Testo da pronunciare",
+  "alarmStopCondition": "Condizione di arresto",
+  "alarmStopOnInteraction": "Al tocco dello schermo",
+  "alarmStopAfterReps": "Dopo N ripetizioni",
+  "alarmRepsHint": "Numero di ripetizioni",
+  "soundSelection": "Suono",
+  "soundBeep": "Bip",
+  "soundRooster": "Gallo",
+  "selectAll": "Seleziona tutto",
+  "deselectAll": "Deseleziona tutto",
+  "accentColorLabel": "Colore lancetta e evidenziazione",
+  "themeClassicBlack": "Nero Classico",
+  "themeModernBlue": "Blu Moderno",
+  "themeMinimalWhite": "Bianco Minimalista",
+  "themeRetroGreen": "Verde Retrò",
+  "themeGoldLuxury": "Lusso Oro",
+  "themeSpaceGray": "Grigio Spaziale",
+  "themeRoseGold": "Oro Rosa",
+  "themeNightBlue": "Blu Notte",
+  "themeIvoryElegance": "Eleganza Avorio",
+  "themeDigitalNeon": "Neon Digitale",
+  "themeCopperVintage": "Rame Vintage",
+  "proThemeMessage": "Tema esclusivo del piano PRO!",
+  "upgradeToProTitle": "Aggiorna a PRO",
+  "upgradeToProDesc": "Sblocca funzionalità esclusive e rimuovi annunci!",
+  "noAds": "Nessun annuncio",
+  "exclusiveThemes": "Temi esclusivi",
+  "supportDeveloper": "Supporta lo sviluppatore",
+  "buyFor": "Compra per",
+  "buyProVersion": "Compra versione PRO",
+  "processing": "Elaborazione...",
+  "unavailable": "Non disponibile",
+  "restorePurchases": "Ripristina acquisti",
+  "loading": "Caricamento..."
+}

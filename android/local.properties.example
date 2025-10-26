@@ -1,0 +1,7 @@
+# Copie este arquivo para 'android/local.properties' e mantenha FORA do Git.
+# Se já existir 'local.properties' na sua máquina, apenas ADICIONE a linha abaixo.
+#
+# App ID do AdMob (NÃO é o Ad Unit ID). Use o da sua conta/projeto.
+# Caso você não defina esta chave, o build usará o App ID de TESTE do Google automaticamente.
+# Formato: ca-app-pub-XXXXXXXXXXXXXXXX~YYYYYYYYYY
+admob.app.id=ca-app-pub-XXXXXXXXXXXXXXXX~YYYYYYYYYY

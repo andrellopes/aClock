@@ -1,0 +1,2 @@
+D:/Dev/src/allc/aClock/android/app/.cxx/Debug/2y2f1a14/x86/CMakeFiles/edit_cache.dir
+D:/Dev/src/allc/aClock/android/app/.cxx/Debug/2y2f1a14/x86/CMakeFiles/rebuild_cache.dir

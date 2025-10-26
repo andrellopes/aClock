@@ -1,0 +1,188 @@
+{
+  "@@locale": "en",
+  "appTitle": "ExacTime",
+  "settingsTitle": "Settings",
+  "appearance": "Appearance",
+  "language": "Language",
+  "systemDefault": "System Default",
+  "english": "English",
+  "portuguese": "Portuguese",
+  "spanish": "Spanish",
+  "german": "German",
+  "french": "French",
+  "italian": "Italian",
+  "theme": "Theme",
+  "light": "Light",
+  "dark": "Dark",
+  "help": "Help",
+  "commandsAndGestures": "Commands and Gestures",
+  "clockTheme": "Clock Theme",
+  "clockThemeDigital": "Digital",
+  "clockThemeFlip": "Flip",
+  "adjustments": "Adjustments",
+  "fontSize": "Font Size",
+  "selectFontSize": "Select Font Size",
+  "enableSlidingMovement": "Enable Sliding Movement",
+  "showSecondsInPortrait": "Show seconds in portrait",
+  "showDate": "Show Date",
+  "saveAndClose": "Save and Close",
+  "settingsSaved": "Settings saved successfully", 
+  "ok": "OK",
+  "developedBy": "Developed by allc 🤖",
+  "aboutTitle": "About",
+  "aboutContactLinks": "Contact and Links:",
+  "aboutSupportMessage": "If this app was useful to you,\nconsider supporting the development with a coffee ☕!",
+  "close": "Close",
+  "aboutPixCopied": "PIX key copied!",
+  "aboutSupportWithPix": "Support with PIX",
+  "commandsDialogTitle": "Commands and Gestures",
+  "doubleTapCommand": "Double Tap on Screen",
+  "doubleTapDescription": "The robot will speak the current time aloud.",
+  "singleTapCommand": "Single Tap on Screen",
+  "singleTapDescription": "Shows or hides the settings button and the developer link.",
+  "iUnderstand": "Got it",
+  "settingsTooltip": "Settings",
+  "timeInHours": "{count,select, 0{twelve} 1{one} 2{two} 3{three} 4{four} 5{five} 6{six} 7{seven} 8{eight} 9{nine} 10{ten} 11{eleven} 12{twelve} 13{one} 14{two} 15{three} 16{four} 17{five} 18{six} 19{seven} 20{eight} 21{nine} 22{ten} 23{eleven} other{}}",
+  "@timeInHours": {
+    "description": "Converts hour number to word for TTS. Handles 24-hour format, converting to 12-hour for speech.",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "timeInMinutes": "{count,select, 0{} 1{oh one} 2{oh two} 3{oh three} 4{oh four} 5{oh five} 6{oh six} 7{oh seven} 8{oh eight} 9{oh nine} 10{ten} 11{eleven} 12{twelve} 13{thirteen} 14{fourteen} 15{fifteen} 16{sixteen} 17{seventeen} 18{eighteen} 19{nineteen} 20{twenty} 21{twenty-one} 22{twenty-two} 23{twenty-three} 24{twenty-four} 25{twenty-five} 26{twenty-six} 27{twenty-seven} 28{twenty-eight} 29{twenty-nine} 30{thirty} 31{thirty-one} 32{thirty-two} 33{thirty-three} 34{thirty-four} 35{thirty-five} 36{thirty-six} 37{thirty-seven} 38{thirty-eight} 39{thirty-nine} 40{forty} 41{forty-one} 42{forty-two} 43{forty-three} 44{forty-four} 45{forty-five} 46{forty-six} 47{forty-seven} 48{forty-eight} 49{forty-nine} 50{fifty} 51{fifty-one} 52{fifty-two} 53{fifty-three} 54{fifty-four} 55{fifty-five} 56{fifty-six} 57{fifty-seven} 58{fifty-eight} 59{fifty-nine} other{}}",
+  "@timeInMinutes": {
+    "description": "Converts minute number to word for TTS. Uses 'oh' for minutes 1-9.",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "timeIsExactly": "It's {time} o'clock.",
+  "@timeIsExactly": {
+    "description": "Sentence for telling the time exactly on the hour.",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "timeIs": "It's {hours} {minutes}.",
+  "@timeIs": {
+    "description": "Sentence for telling the time with hours and minutes.",
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "minutes": {
+        "type": "String"
+      }
+    }
+  },
+  "speakTimeOnChange": "Speak the time automatically",
+  "clockThemeText": "Text",
+  "@clockThemeText": {
+    "description": "The name for the text-based clock theme"
+  },
+  "timeInSeconds": "{count,select, 0{} 1{one} 2{two} 3{three} 4{four} 5{five} 6{six} 7{seven} 8{eight} 9{nine} 10{ten} 11{eleven} 12{twelve} 13{thirteen} 14{fourteen} 15{fifteen} 16{sixteen} 17{seventeen} 18{eighteen} 19{nineteen} 20{twenty} 21{twenty-one} 22{twenty-two} 23{twenty-three} 24{twenty-four} 25{twenty-five} 26{twenty-six} 27{twenty-seven} 28{twenty-eight} 29{twenty-nine} 30{thirty} 31{thirty-one} 32{thirty-two} 33{thirty-three} 34{thirty-four} 35{thirty-five} 36{thirty-six} 37{thirty-seven} 38{thirty-eight} 39{thirty-nine} 40{forty} 41{forty-one} 42{forty-two} 43{forty-three} 44{forty-four} 45{forty-five} 46{forty-six} 47{forty-seven} 48{forty-eight} 49{forty-nine} 50{fifty} 51{fifty-one} 52{fifty-two} 53{fifty-three} 54{fifty-four} 55{fifty-five} 56{fifty-six} 57{fifty-seven} 58{fifty-eight} 59{fifty-nine} other{}}",
+  "@timeInSeconds": {
+    "description": "Converts second number to word.",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "timeIsAll": "It's {hours} hour(s), {minutes} minute(s), and {seconds} second(s).",
+  "@timeIsAll": {
+    "description": "Sentence for displaying the time with hours, minutes, and seconds.",
+    "placeholders": {
+      "hours": { "type": "String" },
+      "minutes": { "type": "String" },
+      "seconds": { "type": "String" }
+    }
+  },
+  "timeIsHourAndSeconds": "It's {hours} hour(s) and {seconds} second(s).",
+  "@timeIsHourAndSeconds": {
+    "description": "Sentence for displaying the time with hours and seconds (when minute is zero).",
+    "placeholders": {
+      "hours": { "type": "String" },
+      "seconds": { "type": "String" }
+    }
+  },
+  "clockThemeAnalog": "Analog",
+  "clockThemeAnalogRoman": "Analog (Roman)",
+  "showClockFrame": "Show clock frame",
+  "use24HourFormat": "Use 24-hour format",
+  "alarms": "Alarms",
+  "addAlarm": "Add Alarm",
+  "alarmMessageHint": "Enter a message to be spoken",
+  "save": "Save",
+  "cancel": "Cancel",
+  "delete": "Delete",
+  "noAlarms": "No alarms set.",
+  "settingsAlarms": "Manage Alarms",
+  "tapToDismiss": "Tap to dismiss",
+  "alarm": "Alarm",
+  "alarmDeleted": "Alarm \"{alarmName}\" deleted.",
+  "@alarmDeleted": {
+    "description": "Confirmation message when an alarm is deleted.",
+    "placeholders": {
+      "alarmName": {
+        "type": "String",
+        "example": "Wake up"
+      }
+    }
+  },
+  "daySundayShort": "S",
+  "dayMondayShort": "M",
+  "dayTuesdayShort": "T",
+  "dayWednesdayShort": "W",
+  "dayThursdayShort": "T",
+  "dayFridayShort": "F",
+  "daySaturdayShort": "S",
+  "alarmNew": "New Alarm",
+  "alarmEdit": "Edit Alarm",
+  "alarmTime": "Time",
+  "alarmLabelHint": "Label (optional)",
+  "alarmRepeat": "Repeat",
+  "alarmSound": "Alarm Sound",
+  "alarmSoundAsset": "Sound file",
+  "alarmSoundTts": "Spoken Text",
+  "alarmTtsHint": "Text to speak",
+  "alarmStopCondition": "Stop Condition",
+  "alarmStopOnInteraction": "On screen tap",
+  "alarmStopAfterReps": "After N repetitions",
+  "alarmRepsHint": "Number of repetitions",
+  "soundSelection": "Sound",
+  "soundBeep": "Beep",
+  "soundRooster": "Rooster",
+  "selectAll": "Select All",
+  "deselectAll": "Deselect All",
+  "accentColorLabel": "Pointer and Highlight Color",
+  "themeClassicBlack": "Classic Black",
+  "themeModernBlue": "Modern Blue",
+  "themeMinimalWhite": "Minimal White",
+  "themeRetroGreen": "Retro Green",
+  "themeGoldLuxury": "Gold Luxury",
+  "themeSpaceGray": "Space Gray",
+  "themeRoseGold": "Rose Gold",
+  "themeNightBlue": "Night Blue",
+  "themeIvoryElegance": "Ivory Elegance",
+  "themeDigitalNeon": "Digital Neon",
+  "themeCopperVintage": "Copper Vintage",
+  "proThemeMessage": "Theme exclusive to PRO plan!",
+  "upgradeToProTitle": "Upgrade to PRO",
+  "upgradeToProDesc": "Unlock exclusive features and remove ads!",
+  "noAds": "No Ads",
+  "exclusiveThemes": "Exclusive Themes",
+  "supportDeveloper": "Support Developer",
+  "buyFor": "Buy for",
+  "buyProVersion": "Buy PRO Version",
+  "processing": "Processing...",
+  "unavailable": "Unavailable",
+  "restorePurchases": "Restore Purchases",
+  "loading": "Loading..."
+}

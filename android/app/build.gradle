@@ -1,0 +1,133 @@
+plugins {
+    id "com.android.application"
+    // START: FlutterFire Configuration
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+    // END: FlutterFire Configuration
+    id "kotlin-android"
+    // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader ->
+        localProperties.load(reader)
+    }
+}
+
+// AdMob App ID: kept out of repository (local.properties)
+// Fallback para o App ID de TESTE do Google, para builds de desenvolvimento.
+def admobAppId = localProperties.getProperty('admob.app.id', 'ca-app-pub-3940256099942544~3347511713')
+
+def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
+if (flutterVersionCode == null) {
+    flutterVersionCode = '1'
+}
+
+def flutterVersionName = localProperties.getProperty('flutter.versionName')
+if (flutterVersionName == null) {
+    flutterVersionName = '1.0'
+}
+
+def keystoreProperties = new Properties()
+def keystorePropertiesFile = rootProject.file('key.properties')
+if (keystorePropertiesFile.exists()) {
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+}
+
+android {
+    namespace = "dev.allc.a_clock"
+    compileSdk = 35
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        // Habilita o Desugaring para retrocompatibilidade de APIs Java.
+        coreLibraryDesugaringEnabled true
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    kotlinOptions {
+        jvmTarget = '11'
+    }
+
+    defaultConfig {
+        // Unique application identifier on Play Store.
+        applicationId = "dev.allc.a_clock"
+        minSdk = 23
+        targetSdk = 35
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+        // Informa ao sistema de build para manter apenas os recursos destes idiomas.
+        resConfigs "en", "es", "pt"
+        multiDexEnabled true
+
+        // Injeta o App ID do AdMob no AndroidManifest via placeholder, sem sobrescrever outros placeholders do Flutter
+        manifestPlaceholders += [
+            ADMOB_APP_ID: admobAppId
+        ]
+
+        // ✅ Suporte a dispositivos com 16 KB page size (Android 15)
+        ndk {
+            abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
+        }
+    }
+
+    signingConfigs {
+        release {
+            if (keystorePropertiesFile.exists()) {
+                keyAlias keystoreProperties['keyAlias']
+                keyPassword keystoreProperties['keyPassword']
+                storeFile rootProject.file(keystoreProperties['storeFile'])
+                storePassword keystoreProperties['storePassword']
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            // Configura a assinatura para o modo release.
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            shrinkResources true
+
+            // ✅ Settings for 16 KB page size
+            ndk {
+                debuggable false
+                abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
+            }
+        }
+
+        debug {
+            // ✅ Settings for 16 KB page size in debug too
+            ndk {
+                debuggable true
+                abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
+            }
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}
+
+dependencies {
+    // Standard Kotlin and AndroidX dependencies
+    implementation 'androidx.core:core-ktx:1.13.1'
+    // The Material Components library, which provides the theme you are using
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    // ✅ Dependency for enableEdgeToEdge() in SDK 35
+    implementation 'androidx.activity:activity-ktx:1.9.0'
+
+    // ✅ Updated dependencies for 16 KB page size and Android 15
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    // Dependency required for Core Library Desugaring.
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.0.4'
+}

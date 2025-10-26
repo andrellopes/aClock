@@ -1,0 +1,1 @@
+{"flutter":{"platforms":{"android":{"default":{"projectId":"a-clock","appId":"1:535719166325:android:854fdafdae02a4e25a133c","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"a-clock","configurations":{"android":"1:535719166325:android:854fdafdae02a4e25a133c","windows":"1:535719166325:web:e368fd579c8373745a133c"}}}}}}

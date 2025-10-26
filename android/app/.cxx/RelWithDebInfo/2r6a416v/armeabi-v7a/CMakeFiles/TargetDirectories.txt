@@ -1,0 +1,2 @@
+D:/Dev/src/allc/aClock/android/app/.cxx/RelWithDebInfo/2r6a416v/armeabi-v7a/CMakeFiles/edit_cache.dir
+D:/Dev/src/allc/aClock/android/app/.cxx/RelWithDebInfo/2r6a416v/armeabi-v7a/CMakeFiles/rebuild_cache.dir

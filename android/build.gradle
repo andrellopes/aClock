@@ -1,0 +1,44 @@
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    // ✅ Configurações para 16 KB page size
+    project.configurations.all {
+        resolutionStrategy.eachDependency { details ->
+            if (details.requested.group == 'androidx.core' && details.requested.name == 'core') {
+                details.useVersion '1.13.1'
+            }
+        }
+    }
+}
+
+rootProject.buildDir = "../build"
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+
+    // ✅ Configurações adicionais para 16 KB page size
+    afterEvaluate { project ->
+        if (project.hasProperty('android')) {
+            project.android {
+                // Otimização para 16 KB page size
+                packagingOptions {
+                    exclude 'META-INF/DEPENDENCIES'
+                    exclude 'META-INF/NOTICE'
+                    exclude 'META-INF/NOTICE.txt'
+                    exclude 'META-INF/LICENSE'
+                    exclude 'META-INF/LICENSE.txt'
+                }
+            }
+        }
+    }
+}
+
+subprojects {
+    project.evaluationDependsOn(":app")
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
