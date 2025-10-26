@@ -43,6 +43,9 @@ app.*.map.json
 /android/app/release
 /android/key.properties
 
+# Android NDK/native build cache
+/android/**/.cxx/
+
 # Sensitive files and secrets (do NOT commit)
 # Android keystore and signing configs
 /android/local.properties
