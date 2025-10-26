@@ -44,8 +44,7 @@ Play Store: [aClock on Google Play](https://play.google.com/store/apps/details?i
 1. **Clone the repository:**
 
     ```powershell
-    git clone https://github.com/andrellopes/allc-a_clock.git
-    cd allc-a_clock
+    git clone https://github.com/andrellopes/aClock.git
     ```
 
 2. **Install dependencies:**

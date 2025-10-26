@@ -1,7 +1,7 @@
 name: a_clock
 description: "Um aplicativo de relógio digital de tela cheia."
 publish_to: 'none'
-version: 1.6.0+32
+version: 1.6.0+33
 environment:
   sdk: ^3.5.2
 dependencies:
