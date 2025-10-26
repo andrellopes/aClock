@@ -1,2 +1,0 @@
-D:/Dev/src/allc/aClock/android/app/.cxx/Debug/2y2f1a14/armeabi-v7a/CMakeFiles/edit_cache.dir
-D:/Dev/src/allc/aClock/android/app/.cxx/Debug/2y2f1a14/armeabi-v7a/CMakeFiles/rebuild_cache.dir
