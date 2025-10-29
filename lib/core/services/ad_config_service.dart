@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
+import 'package:flutter/foundation.dart';
 import 'package:a_clock/secrets.dart';
 
 /// Loads optional local AdMob config from assets/config/admob.json.
@@ -17,8 +18,9 @@ class AdConfigService {
     try {
       final jsonStr = await rootBundle.loadString('assets/config/admob.json');
       _config = json.decode(jsonStr) as Map<String, dynamic>;
-    } catch (_) {
-      // Swallow errors and keep defaults
+      debugPrint('AdConfigService: Successfully loaded JSON config');
+    } catch (e) {
+      debugPrint('AdConfigService: Failed to load JSON: $e');
       _config = null;
     }
   }
@@ -26,7 +28,11 @@ class AdConfigService {
   Future<String> getBannerAndroid() async {
     await _loadIfNeeded();
     final v = _config?['bannerAndroid'];
-    if (v is String && v.trim().isNotEmpty) return v.trim();
+    if (v is String && v.trim().isNotEmpty) {
+      debugPrint('AdConfigService: Using JSON bannerAndroid: ${v.trim()}');
+      return v.trim();
+    }
+    debugPrint('AdConfigService: Using default TEST bannerAndroid: ${AdMobConfig.bannerAndroid}');
     return AdMobConfig.bannerAndroid;
   }
 

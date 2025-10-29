@@ -69,9 +69,11 @@ android {
             ADMOB_APP_ID: admobAppId
         ]
 
-        // ✅ Suporte a dispositivos com 16 KB page size (Android 15)
+        // ✅ Suporte completo a dispositivos com 16 KB page size (Android 15)
         ndk {
             abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
+            // Required for 16 KB page size support
+            pageSize = "16KB"
         }
     }
 
@@ -97,6 +99,8 @@ android {
             ndk {
                 debuggable false
                 abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
+                // Required for 16 KB page size support
+                pageSize = "16KB"
             }
         }
 
@@ -105,6 +109,8 @@ android {
             ndk {
                 debuggable true
                 abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
+                // Required for 16 KB page size support
+                pageSize = "16KB"
             }
         }
     }
