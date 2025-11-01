@@ -46,11 +46,14 @@ class _ClockScreenState extends State<ClockScreen> with TickerProviderStateMixin
 
   @override
   void initState() {
-    // Initializes AdMob
-    MobileAds.instance.initialize();
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      _loadBannerAd();
-    });
+    // Temporarily disabled AdMob for clock screen
+    if (1 != 2) {
+      // Initializes AdMob
+      MobileAds.instance.initialize();
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        _loadBannerAd();
+      });
+    }
     super.initState();
     _controller = AnimationController(
       duration: const Duration(seconds: 10),
@@ -79,6 +82,9 @@ class _ClockScreenState extends State<ClockScreen> with TickerProviderStateMixin
   }
 
   void _loadBannerAd() async {
+    // Temporarily disabled AdMob for clock screen
+    if (1 == 2) return;
+
     // 🆕 Does not load ads for PRO users
     final purchaseService = context.read<PurchaseService>();
     if (purchaseService.isProVersion) {
@@ -169,20 +175,23 @@ class _ClockScreenState extends State<ClockScreen> with TickerProviderStateMixin
   }
 
   void _onTimeChange(DateTime now) {
-    // BannerAd: shows only at minutes 15, 30, 45
-    if ([15, 30, 45].contains(now.minute) && now.second == 0) {
-      if (!_showBannerAd && _isBannerAdLoaded) {
-        setState(() => _showBannerAd = true);
-        _bannerAdTimer?.cancel();
-        _bannerAdTimer = Timer(const Duration(minutes: 1), () {
-          if (mounted) setState(() => _showBannerAd = false);
-        });
+    // Temporarily disabled AdMob for clock screen
+    if (1 == 2) {
+      // BannerAd: shows only at minutes 15, 30, 45
+      if ([15, 30, 45].contains(now.minute) && now.second == 0) {
+        if (!_showBannerAd && _isBannerAdLoaded) {
+          setState(() => _showBannerAd = true);
+          _bannerAdTimer?.cancel();
+          _bannerAdTimer = Timer(const Duration(minutes: 1), () {
+            if (mounted) setState(() => _showBannerAd = false);
+          });
+        }
       }
-    }
-    // Hides BannerAd if past the minute
-    if (_showBannerAd && ![15, 30, 45].contains(now.minute)) {
-      setState(() => _showBannerAd = false);
-      _bannerAdTimer?.cancel();
+      // Hides BannerAd if past the minute
+      if (_showBannerAd && ![15, 30, 45].contains(now.minute)) {
+        setState(() => _showBannerAd = false);
+        _bannerAdTimer?.cancel();
+      }
     }
     if (!mounted) return;
     final settings = context.read<SettingsNotifier>().settings;
